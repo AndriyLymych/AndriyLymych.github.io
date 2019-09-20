@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2594e1ba-0215-4cf9-b6b7-925e39dbcbe8" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Qe7SGVcpkWSWKD0lc6NHfkAxYE" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../vasyl/events/main.js" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Andriy\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2594e1ba-0215-4cf9-b6b7-925e39dbcbe8" name="Default Changelist" comment="" />
+      <created>1568119205957</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568119205957</updated>
+      <workItem from="1568119207138" duration="7454000" />
+      <workItem from="1568183231087" duration="8000" />
+      <workItem from="1568206330088" duration="1355000" />
+      <workItem from="1568211673990" duration="8000" />
+      <workItem from="1568230466085" duration="2033000" />
+      <workItem from="1568268571905" duration="9000" />
+      <workItem from="1568568549257" duration="33000" />
+      <workItem from="1568568741035" duration="2973000" />
+      <workItem from="1568634125027" duration="7073000" />
+      <workItem from="1568649835511" duration="2460000" />
+      <workItem from="1568702397604" duration="16632000" />
+      <workItem from="1568776611860" duration="10565000" />
+      <workItem from="1568808413831" duration="5668000" />
+      <workItem from="1568840416942" duration="32000" />
+      <workItem from="1568907687255" duration="1271000" />
+      <workItem from="1568961490519" duration="11307000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adffa" />
+    <option name="LAST_COMMIT_MESSAGE" value="adffa" />
+  </component>
+</project>

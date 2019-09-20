@@ -18,6 +18,7 @@
             background: antiquewhite;
         }
 
+
         .changesBlock {
             margin: 50px auto;
             background: red;
@@ -86,6 +87,43 @@
             color: orange;
             margin: 30px 30px;
         }
+
+        .message1 {
+            display: flex;
+            margin: 10px;
+        }
+
+        .message2 {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        .message3 {
+            display: flex;
+            margin: 10px;
+
+        }
+
+        .messText1 {
+            color: firebrick;
+            background: aquamarine;
+            margin: 5px;
+        }
+
+        .messText2 {
+            color: firebrick;
+            background: aquamarine;
+            margin: 5px;
+        }
+
+        .messText3 {
+            color: firebrick;
+            background: aquamarine;
+            margin: 5px;
+        }
+
+
     </style>
 </head>
 <body>
@@ -111,7 +149,7 @@
 </form>
 <h2>
     5) Створити інпут з бігунком та блок 200*200, при переміщені бігунка блок збільшує свою ширину пропорційно.
-        Задати бігунку мінімальні значення в 200 максимальне в 600</h2>
+    Задати бігунку мінімальні значення в 200 максимальне в 600</h2>
 <form name="runner">
     <input type="range" name="runnerInput" min="200" max="600" step="1" value="0">
 </form>
@@ -130,7 +168,8 @@
 
 </ul>
 
-<h2>7)Cтворити дві форми , по два інпути в кожній ствоирити кнопку при кліку на яку считується та виводиться на консоль інформація з цих форм:</h2>
+<h2>7)Cтворити дві форми , по два інпути в кожній ствоирити кнопку при кліку на яку считується та виводиться на консоль
+    інформація з цих форм:</h2>
 <form name="ownerForm">
     <input type="text" name="owner" placeholder="owner name">
     <input type="text" name="age" placeholder="owner age">
@@ -141,18 +180,22 @@
     <input type="text" name="power" placeholder="car power">
 </form>
 <button class="ownerBtn">show info</button>
-<h2>8) Створити конструктор таблиць:</h2>
+<h2>8) Створити 4 інпути. Один визначає кількість рядків, другий - кількість стовпців, третій вміст стовпців, четвертий
+    -кнопка.
+    При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
+
+    Після побудови таблички, при подвійному натисканні на будь-який стовпець з'являється новий інпут, в якому
+    з'являється поточне значення стовпця на яку ви натискали.
+    Змінюючи інформацію в цьому інпуті, ви змінюєте інформацію в самому стовпці:</h2>
 <form name="tableForm" style="padding: 20px">
     <input type="text" name="row" placeholder="enter count of table's rows">
     <input type="text" name="cols" placeholder="enter count of table's cols">
     <input type="text" name="text" placeholder="enter  table's value">
 </form>
+<button class="createTableBtn">create table</button>
+
 <table>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+
 </table>
 <h2>9) Сворити масив з нецензурних слів.
     Сворити інпут текстового типу.
@@ -166,11 +209,59 @@
 </form>
 <button class="checkWords">check</button>
 <p class="clearText"></p>
+<h2> 10) Есть список сообщений. Добавьте каждому сообщению по кнопке для его скрытия.</h2>
+<div class="message1">
+    <div class="messText1">Hello world</div>
+    <button class="remove1">hide</button>
+</div>
+<div class="message2">
+    <div class="messText2">I am Andriy</div>
+    <button class="remove2">hide</button>
+</div>
+<div class="message3">
+    <div class="messText3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, fuga, neque. Adipisci aut
+        autem consequatur, cum explicabo iste iure omnis pariatur quia reiciendis rem repellat saepe sequi, sint sunt
+        tempora?
+    </div>
+    <button class="remove3">hide</button>
+</div>
+<h2>11) Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на left-right:</h2>
+<div id="collection" style="margin: 50px auto;display: flex ; flex-direction: column;align-items: center;width: 95%;">
+
+    <div id="photo" style="height: 400px;width: 800px; border: 1px solid black;display: flex;overflow: hidden">
+        <img class="itemImg1" src="./img/img1.jpg" alt="">
+        <img class="itemImg2" src="./img/img2.jpg" alt="sdf">
+        <img class="itemImg3" src="./img/img3.jpg" alt="">
+        <img class="itemImg4" src="./img/img4.jpg" alt="">
+        <img class="itemImg5" src="./img/img5.jpg" alt="">
+    </div>
+    <div id="buttons" style="display: flex; width: 200px;justify-content: space-between;padding-top: 10px">
+        <button id="leftBtn"
+                style="height: 30px;width: 70px;border: 2px solid black;font-weight: bold;display: flex;align-items: center;padding: 5px;border-top-left-radius: 10px">
+            <===
+        </button>
+        <button id="rightBtn"
+                style="height: 30px;width: 70px;border: 2px solid black;font-weight: bold;display: flex;align-items: center;padding: 5px;border-top-right-radius: 10px">
+            ==>
+        </button>
+    </div>
+</div>
+<h2>
+    12) Зробити симулятор друкарської машинки.
+    У вас інпут, куди потрібно ввести текст і кнопка submit
+    При натисканні на кнопку Submit спрацьовує функція, яка з інтервалом від 0.2 до 0.7 секунди пише 1 символ на екран.
+    Має бути ефект ніби це пише людина.
+    Коли весь текст введено видати будь яке сповіщення на екран, яке вкаже, що дію завершено.</h2>
+<form name="typeForm">
+    <input type="text" name="typeText" placeholder="enter your text">
+</form>
+<button id="typeBtn">type</button>
+<p class="typePar" style="height: 100px;width: 600px;background: #804067;margin: 30px;color: snow"></p>
 </body>
 </html>
 <script>
     // 1)Cтворити конструктор блоків:
-
+    //
     let changesBlock = document.querySelector('.changesBlock');
     let heightInp = document.forms.main.heightInp;
     let widthInp = document.forms.main.widthInp;
@@ -212,11 +303,11 @@
     userSubmit.onclick = function () {
         if (!userName.value) {
             alert('Enter your name!')
-        }else if(!userAge.value){
+        } else if (!userAge.value) {
             alert('Enter your age!')
-        }else if (userAge.value < 18) {
+        } else if (userAge.value < 18) {
             alert(`${userName.value}, your age less then 18`)
-        }else if (userAge.value>=18){
+        } else if (userAge.value >= 18) {
             alert(`hello ${userName.value}, that's all right`)
         }
 
@@ -226,15 +317,15 @@
     //     Задати бігунку мінімальні значення в 200 максимальне в 600
     let runnerInput = document.forms.runner.runnerInput;
     let runnerDiv = document.querySelector('.runnerDiv');
-    runnerInput.oninput=function () {
-        runnerDiv.style.width=this.value+'px'
+    runnerInput.oninput = function () {
+        runnerDiv.style.width = this.value + 'px'
     };
     // 5 Создайте меню, которое раскрывается/сворачивается при клике:
     let menu = document.querySelector('.menu');
     let burger = document.querySelector('.burger');
-    burger.onclick=function () {
+    burger.onclick = function () {
         menu.classList.toggle('menuToggle')
-    }
+    };
     let owner = document.forms.ownerForm.owner;
     let ownerAge = document.forms.ownerForm.age;
     let ownerCar = document.forms.carForm.car;
@@ -242,41 +333,46 @@
     let ownerBtn = document.querySelector('.ownerBtn');
 
 
-    ownerBtn.onclick=function () {
+    ownerBtn.onclick = function () {
         console.log(owner.value);
         console.log(ownerAge.value);
         console.log(ownerCar.value);
         console.log(carPower.value);
 
-    }
+    };
     let table = document.querySelector('table');
     let row = document.forms.tableForm.row;
     let cols = document.forms.tableForm.cols;
     let text = document.forms.tableForm.text;
-    let td = document.querySelectorAll('td');
-    text.oninput = function () {
-        for (let i = 0; i < td.length; i++) {
-            td[i].innerText= this.value
+    let createTableBtn = document.querySelector('.createTableBtn');
 
+
+    createTableBtn.onclick = function () {
+        for (let i = 0; i < row.value; i++) {
+            let rowElement = document.createElement('tr');
+            table.appendChild(rowElement);
+            for (let j = 0; j < cols.value; j++) {
+                let colsElement = document.createElement('td');
+                rowElement.appendChild(colsElement);
+                colsElement.innerText = text.value;
+                colsElement.ondblclick = function () {
+                    console.log('jj');
+                    let inputElement = document.createElement('input');
+                    console.log('hello');
+                    inputElement.value = colsElement.innerText;
+                    rowElement.replaceChild(inputElement, colsElement);
+                    inputElement.focus();
+                    inputElement.onblur = function () {
+                        rowElement.replaceChild(colsElement, inputElement)
+                        colsElement.innerText = inputElement.value
+                    }
+                }
+
+            }
         }
-
     };
-    row.oninput = function () {
-        for (let i = 0; i < row.value.length; i++) {
-            table.innerHTML += '<tr>'
 
 
-        }
-
-    };
-    cols.oninput = function () {
-        for (let i = 0; i < cols.value; i++) {
-            table.innerHTML += '<td>'
-
-
-        }
-
-    };
     let btnCheck = document.querySelector('.checkWords');
     let clearText = document.querySelector('.clearText');
 
@@ -286,37 +382,113 @@
         let split = wordsInp.value.split(' ');
         for (let i = 0; i < split.length; i++) {
             for (let j = 0; j < badWords.length; j++) {
-                if (split[i] === badWords[j]) {
+                if (split[i].toLowerCase() === badWords[j] || split[i].toUpperCase() === badWords[j]) {
                     alert(`${split[i]} is a bad word!!!`)
                 } else {
                     clearText.innerText = wordsInp.value
                 }
             }
         }
-    }
+    };
+
+
     // 6 Есть список сообщений. Добавьте каждому сообщению по кнопке для его скрытия.
-    // 7 Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
-    // 8 Создать функцию которая принимает какой-либо элемент DOM-структуры .Функция создает в боди 2 кнопки (назад/вперед)
-    // при нажатии вперед, вы переходите к дочернему элементу, при еще одном нажатии на "вперед", вы переходите к следующему дочернему элементу (лежащему на одном уровне)
-    // НО если у (какого-либо)дочеренего элемента есть дети, то нажатие "вперед" позволяет нам войти внутрь элемента и  выводит первого ребенка. и тд.
-    //     Когда все дети заканчиваются, мы выходим из данного дочернего элемента и переходим к следующему, лежащему с ним на одном уровне
+    let messText1 = document.querySelector('.messText1');
+    let messText2 = document.querySelector('.messText2');
+    let messText3 = document.querySelector('.messText3');
+    let remove1 = document.querySelector('.remove1');
+    let remove2 = document.querySelector('.remove2');
+    let remove3 = document.querySelector('.remove3');
+    remove1.onclick = function () {
+        messText1.style.display = 'none';
+        this.style.display = 'none'
+    };
+    remove2.onclick = function () {
+        messText2.style.display = 'none';
+        this.style.display = 'none'
+
+    };
+    remove3.onclick = function () {
+        messText3.style.display = 'none';
+        this.style.display = 'none'
+
+    };
+
+
     //
     //
-    // 9 Створити 4 инпута. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк, четвертий -кнопка
-    // при натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
     //
-    //     Після побудови таблички, при подвійному натисканні на будь-яку ячейку з'являється новий інпут, в якому з'являється поточне значення ячейки на яку ви натискали.
-    //     Змінюючи інформацію в цьому інпуті, ви змінюєте інформацію в самій ячейці
-    //
-    //
-    //
-    //
-    // 10 создать скрипт, который берет считывает на странице (ее даю я) текст и делает сбоку меню-оглавление по всем заголовкам которые есть в тексте.
-    //     При клике на пункт оглавления вы должны отправляться к этому пункту в тексте
+
     // Зробити симулятор друкарської машинки.
     //     У вас інпут, куди потрібно ввести текст і кнопка submit
     // При натисканні на кнопку Submit спрацьовує функція, яка з інтервалом від 0.2 до 0.7 секунди пише 1 символ на екран.
     //     Має бути ефект ніби це пише людина.
     //     Коли весь текст введено видати будь яке сповіщення на екран, яке вкаже, що дію завершено.
+    let typeText = document.forms.typeForm.typeText;
+    let typeBtn = document.getElementById('typeBtn');
+    let typePar = document.querySelector('.typePar');
+
+    function typist(str, i) {
+        str.split('');
+        if (i < str.length) {
+            setTimeout(() => {
+                typePar.innerText += str[i];
+                i++;
+                typist(str, i)
+            }, 1000);
+
+        } else {
+            alert('finish')
+        }
+
+
+    }
+
+    typeBtn.onclick = function () {
+        typist(typeText.value, 0)
+    }
+
+    // // 7 Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+    let photo = document.getElementById('photo');
+    let leftBtn = document.getElementById('leftBtn');
+    let rightBtn = document.getElementById('rightBtn');
+    let img1 = document.querySelector('.itemImg1');
+    let img2 = document.querySelector('.itemImg2');
+    let img3 = document.querySelector('.itemImg3');
+    let img4 = document.querySelector('.itemImg4');
+    let img5 = document.querySelector('.itemImg5');
+
+
+    leftBtn.addEventListener('click', () => {
+
+        img1.style.transform += 'translate(800px)';
+        img1.style.transition += '2s';
+        img2.style.transform += 'translate(800px)';
+        img2.style.transition += '2s';
+        img3.style.transform += 'translate(800px)';
+        img3.style.transition += '2s';
+        img4.style.transform += 'translate(800px)';
+        img4.style.transition += '2s';
+        img5.style.transform += 'translate(800px)';
+        img5.style.transition += '2s';
+
+    });
+
+    rightBtn.addEventListener('click', () => {
+
+        img1.style.transform += 'translate(-800px)';
+        img1.style.transition += '2s';
+        img2.style.transform += 'translate(-800px)';
+        img2.style.transition += '2s';
+        img3.style.transform += 'translate(-800px)';
+        img3.style.transition += '2s';
+        img4.style.transform += 'translate(-800px)';
+        img4.style.transition += '2s';
+        img5.style.transform += 'translate(-800px)';
+        img5.style.transition += '2s';
+
+
+    });
+
 
 </script>
